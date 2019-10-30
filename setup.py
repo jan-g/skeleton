@@ -13,7 +13,7 @@ setup(
     long_description=read_file("README.md"),
     author="jang",
     author_email="",
-    license=read_file("LICENCE.md"),
+    license="Apache License 2.0"
 
     packages=find_packages(),
 
