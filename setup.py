@@ -8,26 +8,7 @@ def read_file(fn):
 
 setup(
     name="skeleton",
-    version="0.0.1",
-    description="skeleton",
-    long_description=read_file("README.md"),
-    author="jang",
-    author_email="",
-    license="Apache License 2.0"
-
+    versioning="dev",
+    setup_requires=["setupmeta"],
     packages=find_packages(),
-
-    entry_points={
-        'console_scripts': [
-            'cmd = skeleton.cmd:main',
-        ],
-    },
-
-    install_requires=[
-                      "argcomplete",
-                     ],
-    tests_require=[
-                    "pytest",
-                    "flake8",
-                  ],
 )
