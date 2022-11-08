@@ -4,6 +4,7 @@ FROM python:$python AS build
 WORKDIR /src
 
 # Split this because requirements installation can be cacheable
+RUN pip install -U pip
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
